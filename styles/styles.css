@@ -1,3 +1,10 @@
+:root {
+    --border-color: rgb(0 0 0 / 0.2);
+    --text-color: #333;
+    --light-bg: #eee;
+    --dark-border: #000;
+}
+
 nav main {
     max-width: 840px;
 }
@@ -5,10 +12,10 @@ nav main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--light-bg);
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -32,6 +39,6 @@ aside p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--dark-border);
     text-align: center;
 }
