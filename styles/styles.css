@@ -1,17 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER + FOOTER CENTERING */
 header,
 footer {
     max-width: 840px;
     margin: 0 auto;
+    text-align: center;
 }
 
+/* NAVIGATION (FLEXBOX) */
 nav {
     background-color: steelblue;
     padding: 1rem;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+/* NAV LINKS */
 nav a {
     display: block;
     padding: 0.5rem;
@@ -21,51 +31,47 @@ nav a {
     color: white;
 }
 
+/* H1 BORDER */
 h1 {
-    border-bottom: 2px solid steelblue;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
 }
 
-img {
-    width: 150px;
-    height: auto;
-}
-
-header,
-.grid,
-footer {
+/* GRID LAYOUT */
+.grid {
     max-width: 840px;
     margin: 0 auto;
-}
 
-.grid {
     display: grid;
-    align-items: center;
     grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1rem;
 }
 
+/* MAIN CONTENT */
 main {
-    grid-column: 3/3;
+    grid-column: 2/3;
     margin: 1rem;
 }
 
+/* ASIDE CONTENT */
 aside {
-    width: 20rem;
-    position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+    width: 20rem;
+    padding: 1rem;
 }
 
+/* IMAGE STYLING */
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    display: block;
+    margin-bottom: 1rem;
 }
 
-p {
-    padding: 0;
-}
-
+/* FOOTER */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
 }
