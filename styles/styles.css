@@ -66,12 +66,6 @@ aside {
     width: 100px;
     height: auto;
     object-fit: cover;
-
-}
-
-/* IMAGE */
-aside img {
-
     display: block;
 }
 
