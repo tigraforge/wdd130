@@ -62,10 +62,16 @@ aside {
     padding: 1rem;
 }
 
+.same-img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+
+}
+
 /* IMAGE */
 aside img {
-    width: 100%;
-    height: auto;
+
     display: block;
 }
 
@@ -73,4 +79,9 @@ aside img {
 footer {
     margin-top: 1rem;
     padding: 1rem;
+}
+
+profile image {
+    width: 180px;
+    height: auto;
 }
