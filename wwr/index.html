@@ -8,7 +8,7 @@
     <meta name="description"
       content="Contact Nile River Explorers for rafting reservations, trip information, questions, and adventure planning.">
     <meta name="author" content="Mary Akintade">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="./styles/rafting.css">
 
 </head>
 
@@ -70,8 +70,12 @@
             <h2>Join Our Newsletter</h2>
 
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
+                <label for="newsletter-name">Name</label>
+                <input type="text" id="newsletter-name" name="newsletter-name" required>
+
+                <label for="newsletter-email">Email</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+
                 <button type="submit">Subscribe</button>
             </form>
         </section>
